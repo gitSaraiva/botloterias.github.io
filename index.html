@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador</title>
+    <style>
+        body {
+            background-color: #1878C0;
+            text-align: center;
+            color: azure;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: rgba(51, 51, 51, 0);
+            overflow: hidden;
+        }
+
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        
+        .topnav a:hover {
+            background-color: #fdac33;
+            color: rgb(255, 255, 255);
+        }
+
+        .topnav a.active {
+            background-color: #F09000;
+            color: white;
+        }
+
+
+
+        .button1 {
+            background-color: #529D73;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+
+
+        }
+
+        .button1:hover {
+            background-color: #197a43;
+            color: white;
+        }
+
+        .button2 {
+            background-color: #76395E;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+
+        }
+
+        .button2:hover {
+            background-color: #70194e;
+            color: white;
+        }
+
+        .button3 {
+            background-color: #5F30E2;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+        }
+
+        .button3:hover {
+            background-color: #3000b4;
+            color: white;
+        }
+
+        .button4 {
+            background-color: #D6AC15;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+
+        }
+
+        .button4:hover {
+            background-color: #ad8802;
+            color: white;
+        }
+
+        .button5 {
+            background-color: #cb3535;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+
+        }
+
+        .button5:hover {
+            background-color: #cc0505;
+            color: white;
+        }
+
+        .button6 {
+            background-color: #FF7800;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+
+        }
+
+        .button6:hover {
+            background-color: #c75e02;
+            color: white;
+        }
+
+        .button7 {
+            background-color: #90C030;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+
+        }
+
+        .button7:hover {
+            background-color: #6ea303;
+            color: white;
+        }
+
+        .button8 {
+            background-color: #ffcc66;
+            border: none;
+            color: #48C000;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4ms;
+
+        }
+
+        .button8:hover {
+            background-color: #ffb82b;
+            color: white;
+        }
+
+
+        section {
+            background-color: rgb(233, 233, 233);
+            color: #529D73;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 20px;
+            max-height: fit-content;
+            max-width: fit-content;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 7%;
+            padding-bottom: 7%;
+            width: auto;
+            height: auto;
+            margin: auto;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body onload="carregar()">
+    <div class="topnav">
+        <a class="active" href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+    </div>
+    <section>
+        <a href="megasena.html" class="button1">Mega-Sena</a>
+        <a href="lotofacil.html" class="button2">Lotofácil</a>
+        <a href="quina.html" class="button3">Quina</a>
+        <a href="diadesorte.html" class="button4">Dia de Sorte</a>
+        <a href="duplasena.html" class="button5">Dupla-Sena</a>
+        <a href="lotomania.html" class="button6">Lotomania</a>
+        <a href="supersete.html" class="button7">Super Sete</a>
+        <a href="timemania.html" class="button8">TimeMania</a>
+
+    </section>
+
+</body>
+
+</html>
